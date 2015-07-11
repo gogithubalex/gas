@@ -41,21 +41,12 @@ class ViewController: UIViewController {
 			if error == nil
 			{
 				self.debugLabel.text = "got motion: \(motion!)"
-				self.xLabel.text = "A"
-				self.yLabel.text = "B"
-				self.zLabel.text = "C"
 				if let acceleration = motion?.acceleration				{
 					dispatch_async(dispatch_get_main_queue()) {
 						self.debugLabel.text = "got motion on main thread: \(motion!)"
 						self.xLabel.text = "\(acceleration.x)"
 						self.yLabel.text = "\(acceleration.y)"
 						self.zLabel.text = "\(acceleration.z)"
-						
-//						var xyCenter = self.xyBob.center
-//						var zCenter = self.zBob.center
-//						
-//						self.xyBob.center = CGPoint(x: 150 + acceleration.x * 100, y: 150 + acceleration.y * 100)
-//						self.zBob.center = CGPoint(x: 10, y: acceleration.z * 100)
 					}
 				}
 			}
@@ -75,6 +66,9 @@ class ViewController: UIViewController {
 						self.xLabel.text = "\(acceleration.x)"
 						self.yLabel.text = "\(acceleration.y)"
 						self.zLabel.text = "\(acceleration.z)"
+						
+							self.xyBob.center = CGPoint(x: 150 + acceleration.x * 100, y: 150 + acceleration.y * 100)
+							self.zBob.center = CGPoint(x: 10, y: 150 + acceleration.z * 100)
 					}
 				}
 			}
