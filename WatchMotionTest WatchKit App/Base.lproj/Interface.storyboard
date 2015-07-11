@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchMotionTest_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="i3p-oj-rOa">
+                            <items>
+                                <group width="0.33000000000000002" alignment="left" layout="vertical" id="bVb-ua-g03">
+                                    <items>
+                                        <label alignment="center" text=" x " id="fDG-Sb-CUF">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="center" text="Label" minimumScaleFactor="0.5" id="xti-9e-SgR"/>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" alignment="left" layout="vertical" id="FrL-iK-KfC">
+                                    <items>
+                                        <label alignment="center" text=" y " id="EYw-um-Kat">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="center" text="Label" minimumScaleFactor="0.5" id="LTb-o0-sVw"/>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" alignment="left" layout="vertical" id="PXj-Hu-5JY">
+                                    <items>
+                                        <label alignment="center" text=" z " id="2rt-ym-ru0">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="center" text="Label" minimumScaleFactor="0.5" id="2U4-up-yQ0"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Debug info here" numberOfLines="0" id="3R6-pV-2rW"/>
+                    </items>
+                    <connections>
+                        <outlet property="debugLabel" destination="3R6-pV-2rW" id="soE-RR-uWa"/>
+                        <outlet property="xLabel" destination="xti-9e-SgR" id="m9u-vb-oT7"/>
+                        <outlet property="yLabel" destination="LTb-o0-sVw" id="7nK-6U-zNN"/>
+                        <outlet property="zLabel" destination="2U4-up-yQ0" id="IfZ-bG-Muu"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
