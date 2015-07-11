@@ -42,25 +42,13 @@ class ViewController: UIViewController, LineChartDelegate {
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[label]-|", options: nil, metrics: nil, views: views))
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-80-[label]", options: nil, metrics: nil, views: views))
         
-        // simple arrays
-        var data: [CGFloat] = [3, 4, -2, 11, 13, 15,32,33,43,45,65,34,23,23,45,56,76,78,54,34,23,4,4,5,2,34,23,32,43]
-        var data2: [CGFloat] = [1, 3, 5, 13, 17, 20]
-        
-        // simple line with custom x axis labels
-        var xLabels: [String] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        
         lineChart = LineChart()
         lineChart.animation.enabled = true
         lineChart.area = true
         lineChart.x.labels.visible = false
         lineChart.x.grid.count = 5
         lineChart.y.grid.count = 5
-        //lineChart.x.labels.values = xLabels
         lineChart.y.labels.visible = true
-        lineChart.addLine(data)
-        //lineChart.addLine(data2)
-        
-        //lineChart.add
         
         lineChart.setTranslatesAutoresizingMaskIntoConstraints(false)
         lineChart.delegate = self
@@ -130,7 +118,19 @@ class ViewController: UIViewController, LineChartDelegate {
 			}
 		}
 	}
+    @IBAction func start(sender: AnyObject) {
+        xArray = []
+        yArray = []
+        zArray = []
+    }
 	
+    @IBAction func stop(sender: AnyObject) {
+        lineChart.clear()
+        lineChart.addLine(xArray)
+        lineChart.addLine(yArray)
+        lineChart.addLine(zArray)
+    }
+    
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
