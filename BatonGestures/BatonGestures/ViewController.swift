@@ -25,33 +25,33 @@ class ViewController: UIViewController {
         
         let connection = NSURLSession.sharedSession()
         
-        let url = "http://\(harmonHost):8080/v1/init_session"
-        
-        let request = NSURLRequest(URL: NSURL(string: url)!)
-        print(request)
-        
-        let initTask = connection.dataTaskWithRequest(request) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
-            
-            if let e = error {
-                print("\(e)")
-            } else {
-                do {
-                    print("\(data)")
-                    
-                    let parsedObject: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data!,
-                        options: NSJSONReadingOptions.AllowFragments)
-                    
-                    if let json = parsedObject as? NSDictionary {
-                        print("\(json)")
-                        self.sessionId = NSNumberFormatter().numberFromString(json["SessionID"] as! String)!.integerValue
-                    }
-                } catch {
-                    print(error)
-                }
-                
-            }
-        }
-        initTask?.resume();
+//        let url = "http://\(harmonHost):8080/v1/init_session"
+//		
+//        let request = NSURLRequest(URL: NSURL(string: url)!)
+//        print(request)
+//        
+//        let initTask = connection.dataTaskWithRequest(request) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
+//            
+//            if let e = error {
+//                print("\(e)")
+//            } else {
+//                do {
+//                    print("\(data)")
+//                    
+//                    let parsedObject: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data!,
+//                        options: NSJSONReadingOptions.AllowFragments)
+//                    
+//                    if let json = parsedObject as? NSDictionary {
+//                        print("\(json)")
+//                        self.sessionId = NSNumberFormatter().numberFromString(json["SessionID"] as! String)!.integerValue
+//                    }
+//                } catch {
+//                    print(error)
+//                }
+//                
+//            }
+//        }
+//        initTask?.resume();
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,33 +91,50 @@ class ViewController: UIViewController {
     
     var sessionId = 1000
     let persistentId : Int64 = 84583182803994709
-    
-    func didGoLeft() {
-        let connection = NSURLSession.sharedSession()
-        
-        let url2 = "http://\(harmonHost):8080/v1/play_hub_media?SessionID=\(sessionId)&PersistentID=\(persistentId)"
-        
-        let request = NSURLRequest(URL: NSURL(string: url2)!)
-        let playTask = connection.dataTaskWithRequest(request) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
-            
-            if let e = error {
-                print("\(e)")
-            }
-        }
-        playTask?.resume()
-        
-        let url3 = "http://\(macHost):8080/speaker"
-    
-        let showSpeakerRequest = NSURLRequest(URL: NSURL(string: url3)!)
-        let showSpeakerTask = connection.dataTaskWithRequest(showSpeakerRequest) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
-            
-            if let e = error {
-                print("\(e)")
-            }
-        }
-        showSpeakerTask?.resume()
-    }
-    
+	
+	func didGoLeft() {
+		let connection = NSURLSession.sharedSession()
+		
+		let url = "http://\(macHost):8080/speaker"
+		
+		let request = NSURLRequest(URL: NSURL(string: url)!)
+		print(request)
+		
+		let uploadTask = connection.dataTaskWithRequest(request) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
+			
+			if let e = error {
+				print("\(e)")
+			}
+		}
+		uploadTask?.resume();
+	}
+	
+//    func didGoLeft() {
+//        let connection = NSURLSession.sharedSession()
+//
+//        let url2 = "http://\(harmonHost):8080/v1/play_hub_media?SessionID=\(sessionId)&PersistentID=\(persistentId)"
+//        
+//        let request = NSURLRequest(URL: NSURL(string: url2)!)
+//        let playTask = connection.dataTaskWithRequest(request) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
+//            
+//            if let e = error {
+//                print("\(e)")
+//            }
+//        }
+//        playTask?.resume()
+//        
+//        let url3 = "http://\(macHost):8080/speaker"
+//    
+//        let showSpeakerRequest = NSURLRequest(URL: NSURL(string: url3)!)
+//        let showSpeakerTask = connection.dataTaskWithRequest(showSpeakerRequest) { (data : NSData?, response : NSURLResponse?, error : NSError?) -> Void in
+//            
+//            if let e = error {
+//                print("\(e)")
+//            }
+//        }
+//        showSpeakerTask?.resume()
+//    }
+	
     func didGoRight() {
         let url = "https://meshblu.octoblu.com/messages"
         //let url = "http://google.com"

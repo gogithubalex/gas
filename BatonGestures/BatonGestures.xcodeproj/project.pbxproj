@@ -187,6 +187,7 @@
 		FAF822541B51DB6600F068DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alex Decker";
 				TargetAttributes = {
