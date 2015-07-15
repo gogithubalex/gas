@@ -11,9 +11,8 @@ import CoreMotion
 
 class ViewController: UIViewController {
     
-    let macHost = "192.168.82.176"
-    let harmonHost = "192.168.1.247"
-    
+    let macHost = "10.0.1.18"
+	
     let motionManager: CMMotionManager = CMMotionManager()
     let acceleromterQueue: NSOperationQueue = NSOperationQueue()
 
@@ -147,7 +146,7 @@ class ViewController: UIViewController {
         request.addValue("c86b7833-c417-4ab7-8be0-ca6345a02428", forHTTPHeaderField: "meshblu_auth_uuid")
         request.addValue("a38cd815724c7aab7411da2105337848dc947a1a", forHTTPHeaderField: "meshblu_auth_token")
         
-        let message = "Having a blast at iosdevcamp \(NSDate()) "
+        let message = "Hi Town Hall, from our iosdevcamp project \(NSDate()) "
         let payload = "{\"devices\":\"*\",\"payload\":{\"status\":\"\(message)\"}}"
 
         
