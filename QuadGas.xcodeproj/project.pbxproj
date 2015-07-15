@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA80ABCF1B56F66800795D3A /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80ABCE1B56F66800795D3A /* gong.mp3 */; };
+		FAF822D91B5205BA00F068DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF822D81B5205BA00F068DF /* AppDelegate.swift */; };
+		FAF822DB1B5205BA00F068DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF822DA1B5205BA00F068DF /* ViewController.swift */; };
+		FAF822DD1B5205BA00F068DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF822DC1B5205BA00F068DF /* Assets.xcassets */; };
+		FAF822E01B5205BA00F068DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF822DE1B5205BA00F068DF /* Main.storyboard */; };
+		FAF822EB1B5205BA00F068DF /* QuadGasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF822EA1B5205BA00F068DF /* QuadGasTests.swift */; };
+		FAF822F61B5205BA00F068DF /* QuadGasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF822F51B5205BA00F068DF /* QuadGasUITests.swift */; };
+		FAF8230B1B52082100F068DF /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823041B52082100F068DF /* DemoServer.swift */; };
+		FAF8230C1B52082100F068DF /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823051B52082100F068DF /* HttpHandlers.swift */; };
+		FAF8230D1B52082100F068DF /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823061B52082100F068DF /* HttpParser.swift */; };
+		FAF8230E1B52082100F068DF /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823071B52082100F068DF /* HttpRequest.swift */; };
+		FAF8230F1B52082100F068DF /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823081B52082100F068DF /* HttpResponse.swift */; };
+		FAF823101B52082100F068DF /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823091B52082100F068DF /* HttpServer.swift */; };
+		FAF823111B52082100F068DF /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8230A1B52082100F068DF /* Socket.swift */; };
+		FAF823131B5217B300F068DF /* Orientation.scn in Resources */ = {isa = PBXBuildFile; fileRef = FAF823121B5217B300F068DF /* Orientation.scn */; };
+		FAF823151B52280A00F068DF /* FireworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF823141B52280A00F068DF /* FireworkView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA0E373C1B56F5400088B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF822CD1B5205BA00F068DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF822D41B5205BA00F068DF;
+			remoteInfo = QuadGas;
+		};
+		FA0E373E1B56F5400088B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF822CD1B5205BA00F068DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF822D41B5205BA00F068DF;
+			remoteInfo = QuadGas;
+		};
+		FAF822E71B5205BA00F068DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF822CD1B5205BA00F068DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF822D41B5205BA00F068DF;
+			remoteInfo = QuadGas;
+		};
+		FAF822F21B5205BA00F068DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF822CD1B5205BA00F068DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF822D41B5205BA00F068DF;
+			remoteInfo = QuadGas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA80ABCE1B56F66800795D3A /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		FAF822D51B5205BA00F068DF /* QuadGas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadGas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF822D81B5205BA00F068DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF822DA1B5205BA00F068DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF822DC1B5205BA00F068DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF822DF1B5205BA00F068DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF822E11B5205BA00F068DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF822E61B5205BA00F068DF /* QuadGasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadGasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF822EA1B5205BA00F068DF /* QuadGasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadGasTests.swift; sourceTree = "<group>"; };
+		FAF822EC1B5205BA00F068DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF822F11B5205BA00F068DF /* QuadGasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadGasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF822F51B5205BA00F068DF /* QuadGasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadGasUITests.swift; sourceTree = "<group>"; };
+		FAF822F71B5205BA00F068DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF823041B52082100F068DF /* DemoServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		FAF823051B52082100F068DF /* HttpHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandlers.swift; sourceTree = "<group>"; };
+		FAF823061B52082100F068DF /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		FAF823071B52082100F068DF /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		FAF823081B52082100F068DF /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		FAF823091B52082100F068DF /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		FAF8230A1B52082100F068DF /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		FAF823121B5217B300F068DF /* Orientation.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Orientation.scn; path = Common/Orientation.scn; sourceTree = "<group>"; };
+		FAF823141B52280A00F068DF /* FireworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FireworkView.swift; path = ../FireworkView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF822D21B5205BA00F068DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822E31B5205BA00F068DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822EE1B5205BA00F068DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF822CC1B5205BA00F068DF = {
+			isa = PBXGroup;
+			children = (
+				FA80ABCE1B56F66800795D3A /* gong.mp3 */,
+				FAF822D71B5205BA00F068DF /* QuadGas */,
+				FAF822E91B5205BA00F068DF /* QuadGasTests */,
+				FAF822F41B5205BA00F068DF /* QuadGasUITests */,
+				FAF822D61B5205BA00F068DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF822D61B5205BA00F068DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF822D51B5205BA00F068DF /* QuadGas.app */,
+				FAF822E61B5205BA00F068DF /* QuadGasTests.xctest */,
+				FAF822F11B5205BA00F068DF /* QuadGasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF822D71B5205BA00F068DF /* QuadGas */ = {
+			isa = PBXGroup;
+			children = (
+				FAF823141B52280A00F068DF /* FireworkView.swift */,
+				FAF823121B5217B300F068DF /* Orientation.scn */,
+				FAF823031B52082100F068DF /* Common */,
+				FAF822D81B5205BA00F068DF /* AppDelegate.swift */,
+				FAF822DA1B5205BA00F068DF /* ViewController.swift */,
+				FAF822DC1B5205BA00F068DF /* Assets.xcassets */,
+				FAF822DE1B5205BA00F068DF /* Main.storyboard */,
+				FAF822E11B5205BA00F068DF /* Info.plist */,
+			);
+			path = QuadGas;
+			sourceTree = "<group>";
+		};
+		FAF822E91B5205BA00F068DF /* QuadGasTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF822EA1B5205BA00F068DF /* QuadGasTests.swift */,
+				FAF822EC1B5205BA00F068DF /* Info.plist */,
+			);
+			path = QuadGasTests;
+			sourceTree = "<group>";
+		};
+		FAF822F41B5205BA00F068DF /* QuadGasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF822F51B5205BA00F068DF /* QuadGasUITests.swift */,
+				FAF822F71B5205BA00F068DF /* Info.plist */,
+			);
+			path = QuadGasUITests;
+			sourceTree = "<group>";
+		};
+		FAF823031B52082100F068DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAF823041B52082100F068DF /* DemoServer.swift */,
+				FAF823051B52082100F068DF /* HttpHandlers.swift */,
+				FAF823061B52082100F068DF /* HttpParser.swift */,
+				FAF823071B52082100F068DF /* HttpRequest.swift */,
+				FAF823081B52082100F068DF /* HttpResponse.swift */,
+				FAF823091B52082100F068DF /* HttpServer.swift */,
+				FAF8230A1B52082100F068DF /* Socket.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF822D41B5205BA00F068DF /* QuadGas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF822FA1B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGas" */;
+			buildPhases = (
+				FAF822D11B5205BA00F068DF /* Sources */,
+				FAF822D21B5205BA00F068DF /* Frameworks */,
+				FAF822D31B5205BA00F068DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadGas;
+			productName = QuadGas;
+			productReference = FAF822D51B5205BA00F068DF /* QuadGas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF822E51B5205BA00F068DF /* QuadGasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF822FD1B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGasTests" */;
+			buildPhases = (
+				FAF822E21B5205BA00F068DF /* Sources */,
+				FAF822E31B5205BA00F068DF /* Frameworks */,
+				FAF822E41B5205BA00F068DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF822E81B5205BA00F068DF /* PBXTargetDependency */,
+				FA0E373D1B56F5400088B9EC /* PBXTargetDependency */,
+				FA0E373F1B56F5400088B9EC /* PBXTargetDependency */,
+			);
+			name = QuadGasTests;
+			productName = QuadGasTests;
+			productReference = FAF822E61B5205BA00F068DF /* QuadGasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAF822F01B5205BA00F068DF /* QuadGasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF823001B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGasUITests" */;
+			buildPhases = (
+				FAF822ED1B5205BA00F068DF /* Sources */,
+				FAF822EE1B5205BA00F068DF /* Frameworks */,
+				FAF822EF1B5205BA00F068DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF822F31B5205BA00F068DF /* PBXTargetDependency */,
+			);
+			name = QuadGasUITests;
+			productName = QuadGasUITests;
+			productReference = FAF822F11B5205BA00F068DF /* QuadGasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF822CD1B5205BA00F068DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alex Decker";
+				TargetAttributes = {
+					FAF822D41B5205BA00F068DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FAF822E51B5205BA00F068DF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FAF822D41B5205BA00F068DF;
+					};
+					FAF822F01B5205BA00F068DF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FAF822D41B5205BA00F068DF;
+					};
+				};
+			};
+			buildConfigurationList = FAF822D01B5205BA00F068DF /* Build configuration list for PBXProject "QuadGas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF822CC1B5205BA00F068DF;
+			productRefGroup = FAF822D61B5205BA00F068DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF822D41B5205BA00F068DF /* QuadGas */,
+				FAF822E51B5205BA00F068DF /* QuadGasTests */,
+				FAF822F01B5205BA00F068DF /* QuadGasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF822D31B5205BA00F068DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF822DD1B5205BA00F068DF /* Assets.xcassets in Resources */,
+				FA80ABCF1B56F66800795D3A /* gong.mp3 in Resources */,
+				FAF823131B5217B300F068DF /* Orientation.scn in Resources */,
+				FAF822E01B5205BA00F068DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822E41B5205BA00F068DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822EF1B5205BA00F068DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF822D11B5205BA00F068DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF822DB1B5205BA00F068DF /* ViewController.swift in Sources */,
+				FAF8230B1B52082100F068DF /* DemoServer.swift in Sources */,
+				FAF823101B52082100F068DF /* HttpServer.swift in Sources */,
+				FAF8230C1B52082100F068DF /* HttpHandlers.swift in Sources */,
+				FAF8230D1B52082100F068DF /* HttpParser.swift in Sources */,
+				FAF823111B52082100F068DF /* Socket.swift in Sources */,
+				FAF822D91B5205BA00F068DF /* AppDelegate.swift in Sources */,
+				FAF823151B52280A00F068DF /* FireworkView.swift in Sources */,
+				FAF8230F1B52082100F068DF /* HttpResponse.swift in Sources */,
+				FAF8230E1B52082100F068DF /* HttpRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822E21B5205BA00F068DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF822EB1B5205BA00F068DF /* QuadGasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF822ED1B5205BA00F068DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF822F61B5205BA00F068DF /* QuadGasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA0E373D1B56F5400088B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF822D41B5205BA00F068DF /* QuadGas */;
+			targetProxy = FA0E373C1B56F5400088B9EC /* PBXContainerItemProxy */;
+		};
+		FA0E373F1B56F5400088B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF822D41B5205BA00F068DF /* QuadGas */;
+			targetProxy = FA0E373E1B56F5400088B9EC /* PBXContainerItemProxy */;
+		};
+		FAF822E81B5205BA00F068DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF822D41B5205BA00F068DF /* QuadGas */;
+			targetProxy = FAF822E71B5205BA00F068DF /* PBXContainerItemProxy */;
+		};
+		FAF822F31B5205BA00F068DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF822D41B5205BA00F068DF /* QuadGas */;
+			targetProxy = FAF822F21B5205BA00F068DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAF822DE1B5205BA00F068DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF822DF1B5205BA00F068DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF822F81B5205BA00F068DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF822F91B5205BA00F068DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAF822FB1B5205BA00F068DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAF822FC1B5205BA00F068DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAF822FE1B5205BA00F068DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadGas.app/Contents/MacOS/QuadGas";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		FAF822FF1B5205BA00F068DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadGas.app/Contents/MacOS/QuadGas";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		FAF823011B5205BA00F068DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuadGas;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAF823021B5205BA00F068DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuadGasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adecker.QuadGasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuadGas;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF822D01B5205BA00F068DF /* Build configuration list for PBXProject "QuadGas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF822F81B5205BA00F068DF /* Debug */,
+				FAF822F91B5205BA00F068DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF822FA1B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF822FB1B5205BA00F068DF /* Debug */,
+				FAF822FC1B5205BA00F068DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF822FD1B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF822FE1B5205BA00F068DF /* Debug */,
+				FAF822FF1B5205BA00F068DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF823001B5205BA00F068DF /* Build configuration list for PBXNativeTarget "QuadGasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF823011B5205BA00F068DF /* Debug */,
+				FAF823021B5205BA00F068DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF822CD1B5205BA00F068DF /* Project object */;
+}

@@ -1,5 +1,0 @@
-So Far...
-
-Name : Kata -- the iMotion of motion
-
-Project GAS -- gesture as a service
