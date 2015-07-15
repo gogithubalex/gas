@@ -1,0 +1,2 @@
+cd http;
+python -m SimpleHTTPServer 8082
